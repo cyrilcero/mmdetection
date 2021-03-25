@@ -1042,6 +1042,8 @@ class Albu(object):
             self.keymap_to_albu = keymap
         self.keymap_back = {v: k for k, v in self.keymap_to_albu.items()}
 
+        # print(f'ALBUMENTATIONS KEYMAP_BACK {self.keymap_back}')
+
     def albu_builder(self, cfg):
         """Import a module from albumentations.
         Inherits some of `build_from_cfg` logic.
@@ -1120,7 +1122,6 @@ class Albu(object):
                 results['bboxes'] = np.array(
                     results['bboxes'], dtype=np.float32)
             results['bboxes'] = results['bboxes'].reshape(-1, 4)
-
             # filter label_fields
             if self.filter_lost_elements:
 

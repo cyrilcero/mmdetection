@@ -11,13 +11,16 @@ from .voc import VOCDataset
 from .wider_face import WIDERFaceDataset
 from .xml_style import XMLDataset
 from .catchall import CatchAllDataset
+from .catchall_lpr import CatchAllDatasetLPR
+from .catchall_people import CatchAllDatasetPeople
 
 __all__ = [
-    'CustomDataset', 'XMLDataset', 'CocoDataset', 'DeepFashionDataset', 'CatchAllDataset',
+    'CustomDataset', 'XMLDataset', 'CocoDataset', 'DeepFashionDataset', 
     'VOCDataset', 'CityscapesDataset', 'LVISDataset', 'GroupSampler',
     'CustomDataset', 'XMLDataset', 'CocoDataset', 'VOCDataset',
     'CityscapesDataset', 'LVISDataset', 'DeepFashionDataset', 'GroupSampler',
     'DistributedGroupSampler', 'DistributedSampler', 'build_dataloader',
     'ConcatDataset', 'RepeatDataset', 'ClassBalancedDataset',
-    'WIDERFaceDataset', 'DATASETS', 'PIPELINES', 'build_dataset'
+    'WIDERFaceDataset', 'DATASETS', 'PIPELINES', 'build_dataset',
+    'CatchAllDatasetLPR', 'CatchAllDataset', 'CatchAllDatasetPeople',
 ]
